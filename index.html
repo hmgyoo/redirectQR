@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Redirecting</title>
+  <script type="text/javascript">
+    function redirect() {
+      var scheme = 'xuremember://open';
+      var now = new Date().getTime();
+      setTimeout(function () {
+        if (new Date().getTime() - now > 100) return;
+        window.location = 'https://apps.apple.com/ph/app/xure/id6463198157'; // URL of your app on App Store / Play Store
+      }, 25);
+      window.location = scheme;
+    }
+  </script>
+</head>
+<body onload="redirect()">
+  <p>Redirecting...</p>
+</body>
+</html>
