@@ -32,9 +32,9 @@
         document.addEventListener('DOMContentLoaded', function() {
             var generatedCode = getParameterByName('id');
             if (generatedCode) {
-                window.location.href = 'https://roaring-hamster-60de69.netlify.app/itemDetail?id=' + generatedCode;
-            } else {
                 window.location.href = 'https://www.xuredeal.com';
+            } else {
+                console.log('error loading');
             }
         });
     </script>
