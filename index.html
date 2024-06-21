@@ -1,9 +1,43 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="refresh" content="0;url=https://www.xuredeal.com">
     <title>Redirecting...</title>
+</head>
+<body>
+    <p>If you are not redirected automatically, <a href="https://www.xuredeal.com">click here</a>.</p>
+</body>
+</html>
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Redirecting...</title>
+    <script>
+        // Function to extract the query parameter from the URL
+        function getParameterByName(name, url) {
+            if (!url) url = window.location.href;
+            name = name.replace(/[\[\]]/g, '\\$&');
+            var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+                results = regex.exec(url);
+            if (!results) return null;
+            if (!results[2]) return '';
+            return decodeURIComponent(results[2].replace(/\+/g, ' '));
+        }
+
+        // Check if 'id' parameter exists and redirect accordingly
+        document.addEventListener('DOMContentLoaded', function() {
+            var generatedCode = getParameterByName('id');
+            if (generatedCode) {
+                window.location.href = 'https://roaring-hamster-60de69.netlify.app/itemDetail?id=' + generatedCode;
+            } else {
+                window.location.href = 'https://www.xuredeal.com';
+            }
+        });
+    </script>
 </head>
 <body>
     <p>If you are not redirected automatically, <a href="https://www.xuredeal.com">click here</a>.</p>
