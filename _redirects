@@ -1,2 +1,2 @@
 # Redirects from what the browser requests to what we serve
-/itemDetail                www.xuredeal.com
+/itemDetail?id=*  https://www.xuredeal.com    301
