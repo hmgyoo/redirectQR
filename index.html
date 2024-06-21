@@ -6,13 +6,10 @@
   <title>Redirecting</title>
   <script type="text/javascript">
     function redirect() {
-      var scheme = 'xuremember://open';
-      var now = new Date().getTime();
+      // Redirect to the desired URL after a short delay
       setTimeout(function () {
-        if (new Date().getTime() - now > 2000) return;
-        window.location.href = 'https://www.xuredeal.com'; // Correct URL of your app on App Store / Play Store
-      }, 25);
-      window.location.href = scheme;
+        window.location.href = 'https://xuredeal.com';
+      }, 2000); // 2000 milliseconds delay (2 seconds)
     }
   </script>
 </head>
