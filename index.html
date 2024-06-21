@@ -3,20 +3,46 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Redirecting</title>
-<!--   <script type="text/javascript">
-    function redirect() {
-      var scheme = 'xuremember://open';
-      var now = new Date().getTime();
-      setTimeout(function () {
-        if (new Date().getTime() - now > 100) return;
-        window.location = 'https://apps.apple.com/ph/app/xure/id6463198157'; // URL of your app on App Store / Play Store
-      }, 25);
-      window.location = scheme;
+  <title>Test App Link</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
     }
-  </script> -->
+    .container {
+      text-align: center;
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .link {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 18px;
+      color: #fff;
+      background-color: #007bff;
+      text-decoration: none;
+      border-radius: 4px;
+      transition: background-color 0.3s;
+    }
+    .link:hover {
+      background-color: #0056b3;
+    }
+  </style>
 </head>
-<body onload="redirect()">
-  <p>Redirecting...</p>
+<body>
+  <div class="container">
+    <h1>Test App Link</h1>
+    <p>Click the button below to open the app:</p>
+    <a class="link" href="https://roaring-hamster-60de69.netlify.app">Open App</a>
+  </div>
 </body>
 </html>
